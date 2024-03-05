@@ -1,0 +1,28 @@
+{
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+    "[django-html]": {
+        "editor.defaultFormatter": "monosans.djlint",
+    },
+    "pylint.args": [
+        "--disable=C0114",
+        "--disable=C0116",
+        "--disable=W0401",
+        "--disable=W0614",
+    ],
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "auto-close-tag.activationOnLanguage": [
+        "django-html",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "xml",
+        "javascript",
+        "plaintext",
+        "markdown",
+        "vue",
+    ],
+}

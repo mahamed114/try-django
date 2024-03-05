@@ -5,10 +5,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
     <title>
-      {% block title %} Commerce {% endblock title %}
+      {% block title %}
+        Try Django
+      {% endblock title %}
     </title>
-
     <link rel="stylesheet" href="{% static 'css/tailwind-dev.css' %}" />
     <script src="{% static 'js/htmx.js' %}"></script>
     <script src="{% static 'js/alpine.js' %}" defer></script>
@@ -17,7 +20,6 @@
   <body>
     {% block content %}
     {% endblock content %}
-
     <script src="{% static 'js/preline.js' %}"></script>
     <script src="{% static 'js/twelements.js' %}"></script>
   </body>

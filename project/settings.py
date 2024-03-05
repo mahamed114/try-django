@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     # Third party apps
     # Apps
     "core",
+    "home",
 ]
 
 MIDDLEWARE = [

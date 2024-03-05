@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,9 +8,17 @@
     <title>
       {% block title %} Commerce {% endblock title %}
     </title>
+
+    <link rel="stylesheet" href="{% static 'css/tailwind-dev.css' %}" />
+    <script src="{% static 'js/htmx.js' %}"></script>
+    <script src="{% static 'js/alpine.js' %}" defer></script>
+    <script src="{% static 'js/bundle.js' %}"></script>
   </head>
   <body>
     {% block content %}
     {% endblock content %}
+
+    <script src="{% static 'js/preline.js' %}"></script>
+    <script src="{% static 'js/twelements.js' %}"></script>
   </body>
 </html>

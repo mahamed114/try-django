@@ -1,0 +1,30 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "commerce assets",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./css/tailwind.css -o ../static/css/tailwind-dev.css --watch",
+    "tailwind-prod": "npx tailwindcss -i ./css/tailwind.css -o ../static/css/tailwind.css --minify",
+    "bundle": "webpack --config webpack.config.prod.js --mode production",
+    "webpack": "webpack --config webpack.config.dev.js --mode development --watch",
+    "webpack-prod": "webpack --config webpack.config.dev.js --mode production"
+  },
+  "keywords": [],
+  "author": "Mahamed Ali",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "tailwindcss": "^3.4.1",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@preline/pin-input": "^2.0.2",
+    "alpinejs": "^3.13.5",
+    "htmx.org": "^1.9.10",
+    "preline": "^2.0.3",
+    "tw-elements": "^1.1.0"
+  }
+}
